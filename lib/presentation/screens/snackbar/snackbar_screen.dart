@@ -44,22 +44,19 @@ class SnackbarScreen extends StatelessWidget {
         title: const Text('Snackbars y dialogos'),
       ),
       body: Center(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          FilledButton.tonal(
-              onPressed: () {
-                showAboutDialog(context: context, children: [
-                  const Text(
-                      'Consectetur ut cillum duis labore ipsum non magna veniam sunt deserunt laboris. Pariatur exercitation commodo sunt nisi magna nulla reprehenderit qui anim commodo consectetur aliquip. Culpa esse proident mollit consequat. Officia nulla qui excepteur eu mollit elit magna nostrud ad aliqua velit laborum. Eiusmod quis anim officia mollit ullamco eu voluptate. Ad duis sit qui ea eiusmod laboris aute do nisi esse non voluptate nostrud. Fugiat do exercitation eiusmod labore quis in enim.')
-                ]);
-              },
-              child: const Text('Licencias')),
-          FilledButton.tonal(
-              onPressed: () => openDialog(context),
-              child: const Text('Mostrar dialogo')),
-        ],
-      )),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        FilledButton.tonal(
+            onPressed: () {
+              showAboutDialog(context: context, children: [
+                const Text(
+                    'Consectetur ut cillum duis labore ipsum non magna veniam sunt deserunt laboris. Pariatur exercitation commodo sunt nisi magna nulla reprehenderit qui anim commodo consectetur aliquip. Culpa esse proident mollit consequat. Officia nulla qui excepteur eu mollit elit magna nostrud ad aliqua velit laborum. Eiusmod quis anim officia mollit ullamco eu voluptate. Ad duis sit qui ea eiusmod laboris aute do nisi esse non voluptate nostrud. Fugiat do exercitation eiusmod labore quis in enim.')
+              ]);
+            },
+            child: const Text('Licencias')),
+        FilledButton.tonal(
+            onPressed: () => openDialog(context),
+            child: const Text('Mostrar dialogo')),
+      ])),
       floatingActionButton: FloatingActionButton.extended(
         label: const Text('Mostrar Snackbar'),
         icon: const Icon(Icons.remove_red_eye_outlined),
