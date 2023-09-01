@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widget_app/config/menu/menu_items.dart';
 import 'package:widget_app/presentation/screens/cards/cards_screen.dart';
+import 'package:widget_app/presentation/screens/widgets/side_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String name = 'home_screen';
@@ -14,14 +15,13 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter + Widgets'),
       ),
       body: const _HomeView(),
+      drawer: const SideMenu(),
     );
   }
 }
 
 class _HomeView extends StatelessWidget {
-  const _HomeView({
-    super.key,
-  });
+  const _HomeView();
 
   @override
   Widget build(BuildContext context) {
