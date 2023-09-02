@@ -18,7 +18,7 @@ class _SideMenuState extends State<SideMenu> {
           navDrawerIndex = value;
         });
       },
-      children: [
+      children: const [
         NavigationDrawerDestination(
             icon: Icon(Icons.add), label: Text('Home Screen')),
         NavigationDrawerDestination(
